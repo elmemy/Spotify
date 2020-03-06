@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="766-P0-UJ0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splach View Controller-->
+        <scene sceneID="J6d-tg-Z36">
+            <objects>
+                <viewController storyboardIdentifier="SplachViewController" id="766-P0-UJ0" customClass="SplachViewController" customModule="Spotify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Et-MU-8gk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vYG-vC-WNQ">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0d0-TK-nga"/>
+                                    <constraint firstAttribute="width" constant="240" id="T3P-5I-7vi"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vYG-vC-WNQ" firstAttribute="centerX" secondItem="4Et-MU-8gk" secondAttribute="centerX" id="nL7-pF-fBI"/>
+                            <constraint firstItem="vYG-vC-WNQ" firstAttribute="centerY" secondItem="4Et-MU-8gk" secondAttribute="centerY" id="wqV-5V-FS8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Ky-NW-w80"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PS2-0w-WcL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-172" y="-80"/>
+        </scene>
+        <!--Featured Playlist-->
+        <scene sceneID="gGH-xB-rXc">
+            <objects>
+                <viewController storyboardIdentifier="FeaturedPlaylistViewController" id="SuU-mU-IVB" customClass="FeaturedPlaylistViewController" customModule="Spotify" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVj-9r-8fa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="fyu-CP-aXs">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s59-oY-XvW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeaturedPlaylistCell" rowHeight="124" id="0mr-YB-Axb" customClass="FeaturedPlaylistCell" customModule="Spotify" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="124"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0mr-YB-Axb" id="L4P-Gu-DyL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Plv-iG-Pmp">
+                                                    <rect key="frame" x="20" y="11" width="116" height="102"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="102" id="bXr-8a-pTn"/>
+                                                        <constraint firstAttribute="width" constant="116" id="rFE-Hi-FYc"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIh-6Y-gI0">
+                                                    <rect key="frame" x="144" y="24" width="250" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ed-SA-pd0">
+                                                    <rect key="frame" x="144" y="55" width="250" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Plv-iG-Pmp" firstAttribute="top" secondItem="L4P-Gu-DyL" secondAttribute="topMargin" id="0cE-qM-00C"/>
+                                                <constraint firstItem="Plv-iG-Pmp" firstAttribute="leading" secondItem="L4P-Gu-DyL" secondAttribute="leadingMargin" id="4Ah-q3-tLY"/>
+                                                <constraint firstItem="0Ed-SA-pd0" firstAttribute="trailing" secondItem="dIh-6Y-gI0" secondAttribute="trailing" id="Zc7-ry-j9N"/>
+                                                <constraint firstItem="0Ed-SA-pd0" firstAttribute="top" secondItem="dIh-6Y-gI0" secondAttribute="bottom" constant="10" id="a2m-l9-PFW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="dIh-6Y-gI0" secondAttribute="trailing" id="dua-2V-cnU"/>
+                                                <constraint firstItem="Plv-iG-Pmp" firstAttribute="bottom" secondItem="L4P-Gu-DyL" secondAttribute="bottomMargin" id="l8s-MU-WTN"/>
+                                                <constraint firstItem="0Ed-SA-pd0" firstAttribute="leading" secondItem="dIh-6Y-gI0" secondAttribute="leading" id="nec-aQ-52W"/>
+                                                <constraint firstItem="dIh-6Y-gI0" firstAttribute="top" secondItem="L4P-Gu-DyL" secondAttribute="topMargin" constant="13" id="sOg-Qh-4VI"/>
+                                                <constraint firstItem="dIh-6Y-gI0" firstAttribute="leading" secondItem="Plv-iG-Pmp" secondAttribute="trailing" constant="8" id="sqm-cB-1XG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="img" destination="Plv-iG-Pmp" id="9yF-Tt-nJE"/>
+                                            <outlet property="name" destination="dIh-6Y-gI0" id="SB0-On-Fzv"/>
+                                            <outlet property="ownerName" destination="0Ed-SA-pd0" id="cxP-Y7-uZc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fyu-CP-aXs" firstAttribute="centerY" secondItem="gVj-9r-8fa" secondAttribute="centerY" id="1Bb-vs-nBR"/>
+                            <constraint firstItem="hxZ-Xx-L1E" firstAttribute="trailing" secondItem="s59-oY-XvW" secondAttribute="trailing" id="BdO-fh-njY"/>
+                            <constraint firstItem="fyu-CP-aXs" firstAttribute="centerX" secondItem="gVj-9r-8fa" secondAttribute="centerX" id="DIN-xe-Gzo"/>
+                            <constraint firstItem="s59-oY-XvW" firstAttribute="top" secondItem="hxZ-Xx-L1E" secondAttribute="top" id="EVQ-lB-7Oy"/>
+                            <constraint firstItem="s59-oY-XvW" firstAttribute="leading" secondItem="hxZ-Xx-L1E" secondAttribute="leading" id="jwL-cM-kAL"/>
+                            <constraint firstItem="hxZ-Xx-L1E" firstAttribute="bottom" secondItem="s59-oY-XvW" secondAttribute="bottom" id="unB-9v-Wvc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hxZ-Xx-L1E"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Featured Playlist" id="KhV-H7-e8D"/>
+                    <connections>
+                        <outlet property="FeaturedPlaylistTableView" destination="s59-oY-XvW" id="ZAt-FI-MYY"/>
+                        <outlet property="activityIndicator" destination="fyu-CP-aXs" id="6vd-nw-yAT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TJd-Yt-vSc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394.2028985507247" y="-80.357142857142847"/>
+        </scene>
+        <!--Home Navigation Controller-->
+        <scene sceneID="6Gd-Ob-PCL">
+            <objects>
+                <navigationController storyboardIdentifier="HomeNavigationController" id="Cbc-ss-fTv" customClass="HomeNavigationController" customModule="Spotify" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Oki-4D-x3J">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="SuU-mU-IVB" kind="relationship" relationship="rootViewController" id="g78-pv-POx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R4x-2N-EG3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="-80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="215" height="225"/>
+    </resources>
+</document>

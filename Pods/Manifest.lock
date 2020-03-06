@@ -1,0 +1,52 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Cosmos (20.0.1)
+  - Kingfisher (5.12.0):
+    - Kingfisher/Core (= 5.12.0)
+  - Kingfisher/Core (5.12.0)
+  - NVActivityIndicatorView (4.8.0):
+    - NVActivityIndicatorView/Presenter (= 4.8.0)
+  - NVActivityIndicatorView/Presenter (4.8.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
+  - SwiftMessages (7.0.1):
+    - SwiftMessages/App (= 7.0.1)
+  - SwiftMessages/App (7.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos
+  - Kingfisher
+  - NVActivityIndicatorView
+  - RxCocoa (~> 5)
+  - RxSwift (~> 5)
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - Kingfisher
+    - NVActivityIndicatorView
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Cosmos: b47fddf2102bb48580cd3025d9ce0a5c658a65da
+  Kingfisher: dc6e0f53bb5b12c3e75bedb0e01bbd7a640eea69
+  NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
+  SwiftMessages: b577dc7043be8b299857ab35bb663dbff6483bd0
+
+PODFILE CHECKSUM: 37a0e17f1862ba2fb3945e3baa9a728a4d418c0f
+
+COCOAPODS: 1.8.4
